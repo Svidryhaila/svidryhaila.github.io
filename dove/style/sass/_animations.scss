@@ -1,0 +1,142 @@
+@import '_mixins';
+@import '_colors';
+
+@keyframes fadeInLeft {
+	0% {
+		opacity: 0;
+		@include transform(translate(-50px,0));
+	}
+
+	100% {
+		opacity: 1;
+		@include transform(translate(0,0));
+	}
+}
+
+@keyframes fadeInRight {
+	0% {
+		opacity: 0;
+		@include transform(translate(50px,0));
+	}
+
+	100% {
+		opacity: 1;
+		@include transform(translate(0,0));
+	}
+}
+
+@keyframes logoAnime_1 {
+	0% {
+		@include transform(translate(0,-8px));
+	}
+
+	100% {
+		@include transform(translate(100px,0) rotateY(180deg));
+		color: $color_4;
+	}	
+}
+
+@keyframes logoAnime_2 {
+	0% {
+		
+	}
+
+	100% {
+		@include transform(rotateX(180deg));
+	}	
+}
+
+@keyframes tabAnime {
+	0% {
+		opacity: 0;
+	}
+
+	100% {
+		opacity: 1;
+	}
+}
+
+@keyframes btnsAnime_1 {
+	
+}
+
+@keyframes btnsAnime_2 {
+	
+}
+
+@keyframes tabCarouselAnime {
+	0% {
+		@include transform(translateX(202px));
+	}
+
+	100% {
+		@include transform(translateX(0));
+	}
+}
+
+@keyframes navDropdown {
+	0% {
+		@include transform(translateY(20px));
+		opacity: 0;
+	}
+
+	75% {
+		@include transform(translateY(-5px));
+	}
+
+	100% {
+		@include transform(translateY(0));
+		opacity: 1;
+	}
+}
+
+@keyframes navDropdownLi {
+	0% {
+		opacity: 0;
+	}
+
+	100% {
+		opacity: 1;
+	}
+}
+
+@keyframes accordionAnime {
+	0% {
+		opacity: 0;
+	}
+
+	100% {
+		opacity: 1;
+	}
+}
+
+@keyframes videoModalAnime {
+	0% {
+		@include transform(scale(0.5));
+	}
+
+	100% {
+		@include transform(scale(1));
+	}
+}
+
+@keyframes cardFadeIn {
+	0% {
+		@include transform(translateX(-200px));
+	}
+
+	100% {
+		@include transform(translateX(0));
+	}
+}
+
+@keyframes slideNum {
+  from {
+    transform: translateY(-10em);
+  }
+
+  to {
+    transform: translateY(0);
+  }
+}
+
