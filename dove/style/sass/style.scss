@@ -95,6 +95,24 @@ i {pointer-events: none;} //prevent element from being event target
 
 /*=================COMMON=============*/
 
+.preload {
+  position: fixed;
+  z-index: 9999;
+  width: 100%;
+  height: 100%;
+  background: #fff;
+  left: 50%;
+  top: 50%;
+  @include transition(opacity 0.5s);
+
+  img {
+    position: absolute;
+    width: 100px;
+    height: 98px;
+    @include transform(translate(-50%,-50%));
+  }
+}
+
 .clearfix:after {
   content: "";
   display: table;
